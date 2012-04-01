@@ -1,4 +1,6 @@
 TravelShare::Application.routes.draw do
+  resources :experiences
+
   resources :destinations
 
   # The priority is based upon order of creation:
