@@ -1,22 +1,224 @@
-<h1>Listing destinations</h1>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TrekGems | Custom Travel Recommendations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th></th>
-    <th></th>
-  </tr>
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+<body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">TrekGems</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Search</a></li>
+              <li><a href="#about">Favorites</a></li>
+              <li><a href="#contact">Settings</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <center>
+			<h1>TrekGems</h1>
+        		<p>Personalized Travel Recommendations</p>
+		</center>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span2">
+				 <ul class = "unstyled nav">
+					<li class ="side-nav"><a href=#> My Profile </a></li>
+				    <li class ="side-nav"><a href=#> Share my Trekgems </a></li>
+				    <li class ="side-nav"><a href=#> Do something </a></li>
+				</ul>
 
 
-<% @destinations.each do |destination| %>
-  <tr>
-    <td><%= link_to destination.name, destination %></td>
-    <td><%= link_to 'Edit', edit_destination_path(destination) %></td>
-    <td><%= link_to 'Destroy', destination, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
+        </div>
+        <div class="span8">
+          <div class= "rowcolor">
+				<form>
+				 	<div class="center-box">
+				 		<div class="row">
+				 			<div class="span6">
+				    			<lable>Do you know where you want to go?</label>
+		          				<input type="checkbox"> Yes
+		          				<input type="checkbox"> No	
+		 						<br><input type="text" placeholder="Enter Destination Here!">
+		 					</div>
+		 				</div>
+				  	</div>
 
-<br />
+						<div class="row">
+							<div class="span6">
+								<lable>Select Activities</label>
 
-<%= link_to 'New Destination', new_destination_path %>
+
+								<div>
+									<ul class ="unstyled">
+									<li>
+										<label class="checkbox">
+				    					<input type="checkbox"> Adventure
+				  						</label>
+									</li>
+									<li>
+										<label class="checkbox">
+				    					<input type="checkbox"> Nightlife
+				  						</label>
+									</li>
+									<li>
+										<label class="checkbox">
+				    					<input type="checkbox"> Outdoors
+				  						</label>
+									</li>
+									<li>
+										<label class="checkbox">
+										<input type="checkbox"> Beach
+										</label>
+									</li>
+									<li>
+										<label class="checkbox">
+										<input type="checkbox"> Culture
+										</label>
+									</li>
+									<li>
+										<label class="checkbox">
+										<input type="checkbox"> Sightseeing
+										</label>
+									</li>
+				 				 </ul>
+								</div>
+							</div>
+						</div>
+
+
+
+			<button type="submit" class="btn btn-primary">SEARCH<br>Our best travel recommendations</button>
+
+
+
+				</form>
+				</div>
+       </div>
+
+        <div class="span2">
+          <div class= "poll-box rowcolor"> 
+			<form>
+				What kind of food you like?<br/>
+				<input type="radio" name="food" value="lessspicy" /> less spicy<br/>
+				<input type="radio" name="food" value="mildlyspicy" /> mildly spicy<br/>
+				<input type="radio" name="food" value="veryspicy" /> very spicy
+			</form>
+		  </div>
+		  <div class= "ad-box"> 
+			<img src="http://placehold.it/140x180">
+		  </div>
+        </div>
+      </div>
+
+      <hr>
+
+<div class="row">
+        <div class="span6">
+          <h2>Heading</h2>
+           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="span6">
+          <h2>Heading</h2>
+           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+       </div>
+    </div>
+
+	<h1>Listing destinations</h1>
+
+	<table>
+	  <tr>
+	    <th>Name</th>
+	    <th></th>
+	    <th></th>
+	  </tr>
+
+
+	<% @destinations.each do |destination| %>
+	  <tr>
+	    <td><%= link_to destination.name, destination %></td>
+	    <td><%= link_to 'Edit', edit_destination_path(destination) %></td>
+	    <td><%= link_to 'Destroy', destination, confirm: 'Are you sure?', method: :delete %></td>
+	  </tr>
+	<% end %>
+	</table>
+
+	<br />
+
+	<%= link_to 'New Destination', new_destination_path %>
+
+
+
+
+
+      <footer>
+        <p>&copy; TrekGems 2012</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+
+
+
+

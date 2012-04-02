@@ -8,3 +8,14 @@ REQUIREMENTS
 
 Destination Scaffold
 name
+
+Experience Scaffold
+name
+destination
+
+
+TO DO
+-display the experiences from each destination
+-change destination display on experience to the destination name
+-change the destination text box to a drop down, in experience form
+-put code on github.  (reference it if I email with questions)
